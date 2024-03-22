@@ -135,32 +135,40 @@
                     precio: <i>$120</i></p>
             </article>
         </section>
-        <h6>*Todos nuestros platillos incluyen un agua del dia totalmente gratis</h6></br>
+        <h6>*Todos nuestros platillos incluyen un agua del dia totalmente gratis</h6>
         <h2 class="titulos" id="orden">Ingresa tu orden</h2>
         <section>
             <form>
-                <label for="pechugaEspagueti"> Pechuga empanizada con espagueti: </label> <input type="number"
-                    name="pechugaEspagueti" placeholder="N° de platos" min="0">
-                <br></br>
-                <label for="polloPoblano"> Pollo en crema de chile poblano: </label><input type="number"
-                    name="polloPoblano" placeholder="N° de platos" min="0">
-                <br></br>
-                <label for="enchiladasSuizas"> Enchiladas suizas: </label><input type="number" name="enchiladasSuizas"
-                    placeholder="N° de platos" min="0">
-                <br></br>
-                <label for="sopaAzteca"> Sopa Azteca: </label><input type="number" name="sopaAzteca"
-                    placeholder="N° de platos" min="0">
-                <br></br>
-                <label for="alergias"> Alergias o especificaciones: </label> <br>
-                <textarea name="alergias" rows="4" cols="50"
-                    placeholder="Escribe aquí tus alergias o especificaciones"></textarea>
-                <label for="aguas"> ¿Deseas tu agua gratis? </label>
-                <input type="radio" name="aguas">Si <input type="radio" name="aguas">No
-                <br></br>
-                <label for="medioPago"> ¿Medio de pago? </label>
-                <input type="radio" name="medioPago" value="efectivo">Efectivo
-                <input type="radio" name="medioPago" value="tarjeta">Tarjeta
-                <br></br>
+                <label for="pechugaEspagueti"> Pechuga empanizada con espagueti: </label>
+                <input type="number" id="pechugaEspagueti" name="pechugaEspagueti" placeholder="N° de platos" min="0">
+                <br><br>
+                <label for="polloPoblano"> Pollo en crema de chile poblano: </label>
+                <input type="number" id="polloPoblano" name="polloPoblano" placeholder="N° de platos" min="0">
+                <br><br>
+                <label for="enchiladasSuizas"> Enchiladas suizas: </label>
+                <input type="number" id="enchiladasSuizas" name="enchiladasSuizas" placeholder="N° de platos" min="0">
+                <br><br>
+                <label for="sopaAzteca"> Sopa Azteca: </label>
+                <input type="number" id="sopaAzteca" name="sopaAzteca" placeholder="N° de platos" min="0">
+                <br><br>
+                <label for="alergias"> Alergias o especificaciones: </label>
+                <br>
+                <textarea id="alergias" name="alergias" rows="4" cols="50" placeholder="Escribe aquí tus alergias o especificaciones"></textarea>
+                <br><br>
+                <label> ¿Deseas tu agua gratis? </label>
+                <br>
+                <label for="si">Si</label>
+                <input type="radio" id="si" name="aguas" value="si">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="aguas" value="no">
+                <br><br>
+                <label> ¿Medio de pago? </label>
+                <br>
+                <label for="efectivo">Efectivo</label>
+                <input type="radio" id="efectivo" name="medioPago" value="efectivo">
+                <label for="tarjeta">Tarjeta</label>
+                <input type="radio" id="tarjeta" name="medioPago" value="tarjeta">
+                <br><br>
                 <input type="submit" value="Pagar">
             </form>
         </section>
